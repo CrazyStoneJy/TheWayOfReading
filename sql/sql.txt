@@ -1,0 +1,4 @@
+//插入book_type
+insert into book_type(name) values ('it');
+//插入book
+insert into book(book_name,book_author,book_url,book_cover_url,book_describe,type_id) values('java编程思想','梁勇','http://www.baidu.com','xxx','xxx',1);

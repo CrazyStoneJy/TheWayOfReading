@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/base.css') }}">
+    {% block head %}{% endblock %}
+    <script>
+            function index(){
+                logo = document.getElementById('id-logo');
+                logo.innerHTML = 'test'
+                alert('click logo');
+            }
+            function test(){
+                alert('test')
+            }
+
+    </script>
+
+</head>
+<body>
+
+<nav id="id-nav">
+    <div id="id-logo" onclick="index()">读书之路</div>
+    <div id="id-navigation">
+        <span class="navigation-text" onclick="test()">首页</span>
+        <span class="navigation-text">分类</span>
+        <span class="navigation-text">时光轴</span>
+    </div>
+    <div id="id-search">
+        <input type="text" placeholder="请输入内容" class="input_search">
+        <div class="btn-search">搜索</div>
+    </div>
+</nav>
+
+{% block main %}{% endblock %}
+
+</body>
+</html>

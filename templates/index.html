@@ -1,0 +1,64 @@
+<style>
+.book-list{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+.book-list li{
+    width: 25%;
+    padding:8px 0px 8px 0px;
+}
+.book-image{
+    height: 200px;
+}
+div.imgcard{
+     width: 200px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     text-align: center;
+}
+div.container{
+     <!--padding: 5px;-->
+     width: 25%;
+}
+.book-name{
+    padding-bottom: 5px;
+}
+.book-author{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+{% extends 'base.html' %}
+
+
+{% block main %}
+<ul class="book-list">
+    {% for card in cards %}
+    <li>
+        <div class="imgcard" onclick="function(){ alert('jump detail page') }">
+            <img src="{{ card.url}}"
+                 style="width:100%"
+                 class="book-image"/>
+            <div class="container">
+                <p class="book-name">{{ card.name }}</p>
+            </div>
+            <div class="container">
+                <p class="book-author">{{ card.author }}</p>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

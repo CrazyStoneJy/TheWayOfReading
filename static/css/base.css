@@ -1,0 +1,41 @@
+#id-nav{
+    background-color: #fff;
+    height: 60px;
+    display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+    border-bottom: 0.5px solid #eee;
+}
+#id-logo{
+    color: #0077E6;
+    font: 40px;
+    display: inline;
+    margin-left: 50px;
+    padding: 15px;
+}
+#id-navigation{
+    color: #fff;
+    display: inline;
+    margin-left: 50px;
+}
+#id-search{
+    margin-left: 50px;
+    color: #fff;
+    display: inline;
+}
+.navigation-text{
+    margin-left: 30px;
+    color: #77839C;
+}
+.input_search{
+    width: 250px;
+    height: 35px;
+    padding-left: 8px;
+}
+.btn-search{
+    background-color: #0077E6;
+    color: #fff;
+    display: inline;
+    padding: 5px 8px 5px 8px;
+    margin-left: 10px;
+}
